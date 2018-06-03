@@ -1,13 +1,18 @@
 html
     head
-        title CC - Join
+        title CodeComp | Join A Team
         include _mixins/header
     body
         include _mixins/nav
         .centered
-            div(style="text-align: center; font-size: 2em").
-                Join Competition
             form(action="join", method="POST" style="margin: auto; text-align: center")
-                input(type="text", name="id", style="color: black")
+                label(for="id") Name
+                input(type="text", name="user_name", required)
+                br
+                label(for="team-name") Team Name
+                input(type="text", name="team_name", required)
+                br
+                label(for="comp-name") Competition
+                input(type="text", name="comp_name", required)
                 br
                 input.button.button-primary(type="submit", value="submit")

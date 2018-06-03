@@ -1,13 +1,11 @@
 const express = require('express');
+const models = require('../../models');
 
 let routes = express.Router();
 
 routes.get('/', (req, res) => {
     res.render('pages/dashboard.pug', {
-        competition: {
-            name: "ASPCA Programming Competition",
-            nusers: 32
-        }
+        competition: req.user_info.competition
     });
 });
 

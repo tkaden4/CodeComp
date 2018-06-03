@@ -4,7 +4,40 @@ html
         include _mixins/header
     body
         include _mixins/nav
-            .buttons(style="display: inline-block")
-                button Create
-                button.button.button-primary Join
+            .buttons
+                a(href="/create")
+                    button Create
+                a(href="/join")
+                    button.button.button-primary Join
+        br
         .container
+            .row
+                .tool.six.columns
+                    .title.
+                        Team Management
+                    i.fas.fa-users.icon
+                    .desc.
+                        Simple team creation and configuration gives participants
+                        an easy collaborative experience.
+                .tool.six.columns
+                    .title.
+                        Automated Judging
+                    i.fas.fa-gavel.icon
+                    .desc.
+                        Automated Juding lets you focus on providing a quality
+                        competition experience and reduces error.
+            .row
+                .tool.six.columns
+                    .title.
+                        Problem Creation
+                    i.fas.fa-chalkboard.icon
+                    .desc.
+                        The problem management system lets you quickly make
+                        changes to your challenges. 
+                .tool.six.columns
+                    .title.
+                        Easy Ranking
+                    i.fas.fa-stream.icon
+                    .desc.
+                        Ranking is done automatically to remove the burden
+                        on judges.

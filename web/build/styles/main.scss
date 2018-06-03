@@ -9,26 +9,74 @@ body, html {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    color: $fg-color;
+    text-decoration: none;
+    &:hover {
+        color: lightgrey;
+    }
+}
+
+form {
+    input {
+        color: black;
+    }
+    textarea {
+        color: black;
+    }
+}
+
+.tool {
+    .title {
+        font-size: 1.5em;
+    }
+}
+
 .buttons {
     text-align: center;
     float: right;
-    & > button {
+    & > a {
         transform: translate(0, 25%);
         margin-left: 10px;
     }
 }
 
-.header {
-    background-color: $fg-color;
-    color: $bg-color;
+.tool {
+    margin-top: 20px;
+    text-align: center;
+    //border: 1px solid grey;
+    padding: 15px;
+
+    .icon {
+        font-size: 4em;
+    }
+
+    & > .title {
+        font-size: 1.5em;
+    }
 }
 
-.title {
-    height: $header-size;
-    line-height: $header-size;
-    font-size: 4vw;
-    margin-left: 15px;
+body > .header {
+    background-color: $fg-color;
+    color: $bg-color;
+
+    .title {
+        color: $bg-color;
+        height: $header-size;
+        line-height: $header-size;
+        font-size: 25px;
+        max-height: $header-size;
+        margin-left: 15px;
+    }
+    a {
+        color: $bg-color;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
 }
+
 
 .orange {
     color: orange;
@@ -55,8 +103,54 @@ body, html {
     padding: 15px;
 }
 
-.problem {
+.incomplete {
+    border-left: 5px solid grey;
+}
 
+.complete {
+    border-left: 5px solid #00ff00aa;
+}
+
+.challenge {
+    margin: 15px 0;
+    padding-left: 10px;
+    .header {
+        .title {
+            font-size: 1.5em;
+        }
+        .rating {
+            margin-left: 10px;
+            color: $fg-color;
+            padding: 0 5px;
+            text-align: center;
+        }
+        .hard {
+            background-color: #ff000099;
+        }
+        .fair {
+            background-color: #ffff0099;
+        }
+        .easy {
+            background-color: #00ff0099;
+        }
+
+        & > * {
+            display: inline-block;
+        }
+    }
+    .desc {
+        margin: 0;
+        opacity: 0.9;
+    }
+}
+
+.challenge-in-page {
+
+}
+
+.competition-header {
+    font-size: 2em;
+    margin-top: 15px;
 }
 
 #logo {

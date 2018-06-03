@@ -1,0 +1,25 @@
+html
+    head
+        title CodeComp | Create Challenge
+        include _mixins/header
+    body
+        include _mixins/nav-cent
+        .centered
+            form(method="POST", action="")
+                label(for="title") Title
+                input(type="text", name="title")
+                br
+                label(for="difficulty") Difficulty
+                div
+                    input(type="radio", name="difficulty", value="easy")
+                    span Easy
+                div
+                    input(type="radio", name="difficulty", value="fair", checked)
+                    span Fair
+                div
+                    input(type="radio", name="difficulty", value="hard")
+                    span Hard
+                label(for="desc") Description
+                textarea(name="desc")
+                br
+                button.button-primary(type="submit", value="submit") Create

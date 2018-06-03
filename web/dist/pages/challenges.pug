@@ -1,0 +1,21 @@
+html
+    head
+        title CodeComp | Challenges
+        include _mixins/header
+    body
+        include _mixins/team-nav
+        .container
+            div.competition-header
+                span #{competition.name} Challenges
+            if challenges.length === 0
+                i="No challenges available"
+            for challenge in challenges
+                .challenge
+                    .header
+                        .title
+                            a(href="/" + challenge.name)=challenge.name
+                        span.rating(class=challenge.rating)=challenge.rating
+                    if challenge.desc
+                        .desc=challenge.desc
+                    else
+                        i.desc="No description available"

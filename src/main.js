@@ -4,6 +4,14 @@ const mongoose = require('mongoose');
 const path = require('path');
 const sass = require('node-sass-middleware');
 
+const models = require('./models');
+
+mongoose.connect('mongodb://localhost/codecomp');
+
+let db = mongoose.connection;
+
+db.on('error', () => console.error('connection error'));
+
 const DEBUG_STATE = true;
 
 const STATIC_BASE = path.join(__dirname, '../web/');

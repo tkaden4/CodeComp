@@ -3,22 +3,51 @@ body, html {
   color: ghostwhite;
   font-family: 'Raleway', sans-serif; }
 
+a {
+  color: ghostwhite;
+  text-decoration: none; }
+  a:hover {
+    color: lightgrey; }
+
+form input {
+  color: black; }
+
+form textarea {
+  color: black; }
+
+.tool .title {
+  font-size: 1.5em; }
+
 .buttons {
   text-align: center;
   float: right; }
-  .buttons > button {
+  .buttons > a {
     transform: translate(0, 25%);
     margin-left: 10px; }
 
-.header {
+.tool {
+  margin-top: 20px;
+  text-align: center;
+  padding: 15px; }
+  .tool .icon {
+    font-size: 4em; }
+  .tool > .title {
+    font-size: 1.5em; }
+
+body > .header {
   background-color: ghostwhite;
   color: #1a1a1c; }
-
-.title {
-  height: 60px;
-  line-height: 60px;
-  font-size: 4vw;
-  margin-left: 15px; }
+  body > .header .title {
+    color: #1a1a1c;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    max-height: 60px;
+    margin-left: 15px; }
+  body > .header a {
+    color: #1a1a1c; }
+    body > .header a:hover {
+      opacity: 0.7; }
 
 .orange {
   color: orange;
@@ -39,6 +68,38 @@ body, html {
 .stat {
   text-align: center;
   padding: 15px; }
+
+.incomplete {
+  border-left: 5px solid grey; }
+
+.complete {
+  border-left: 5px solid #00ff00aa; }
+
+.challenge {
+  margin: 15px 0;
+  padding-left: 10px; }
+  .challenge .header .title {
+    font-size: 1.5em; }
+  .challenge .header .rating {
+    margin-left: 10px;
+    color: ghostwhite;
+    padding: 0 5px;
+    text-align: center; }
+  .challenge .header .hard {
+    background-color: #ff000099; }
+  .challenge .header .fair {
+    background-color: #ffff0099; }
+  .challenge .header .easy {
+    background-color: #00ff0099; }
+  .challenge .header > * {
+    display: inline-block; }
+  .challenge .desc {
+    margin: 0;
+    opacity: 0.9; }
+
+.competition-header {
+  font-size: 2em;
+  margin-top: 15px; }
 
 #logo {
   max-height: 60px;

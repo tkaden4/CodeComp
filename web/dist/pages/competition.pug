@@ -3,4 +3,8 @@ html
         title CodeComp - #{competition.name}
         include _mixins/header
     body
-        include _mixins/nav
+        include _mixins/nav-cent
+        .container
+            h3=competition.name
+            for team in competition.teams
+                div=team.name

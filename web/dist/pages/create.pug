@@ -1,0 +1,13 @@
+html
+    head
+        title CodeCamp | Create Competition
+        include _mixins/header
+    body
+        include _mixins/nav-cent
+        .centered
+            h3 Create Competition
+            form(action="/create", method="POST")
+                div
+                    label(for="name") Name
+                    input(type="text", id="name", name="name")
+                button.button-primary(type="submit", id="submit") Create

@@ -1,26 +1,17 @@
 html
     head
-        title Dashboard
+        title CodeComp | #{competition.name} Dashboard
         include _mixins/header
     body
-        .header
-            .container
-                include _mixins/logo
-                span.title=competition.name
+        include _mixins/nav-cent
         .container
             br
-            .row
-                div.four.columns.stat.orange
-                    div Students
-                    div=competition.nusers
-                div.four.columns.stat.yellow
-                    div Students
-                    div=competition.nusers
-                div.four.columns.stat.purple
-                    div Students
-                    div=competition.nusers
-            br
-            .row
-                div.four.columns.stat.blue
-                    div Students
-                    div=competition.nusers
+            h3=competition.name
+            div
+                a(href='challenges/new') Create Challenge
+            h5 Challenges
+            if competition.challenges.length
+                for challenge in competition.challenges
+                    div=challenge
+            else
+                i No challenges available

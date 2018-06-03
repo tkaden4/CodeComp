@@ -1,0 +1,13 @@
+html
+    head
+        title CodeComp | #{challenge.name}
+        include _mixins/header
+    body
+        include _mixins/team-nav
+        .container
+            .challenge-in-page
+                .title=challenge.title
+                if challenge.desc
+                    .desc=challenge.desc
+                else
+                    i.desc="No description available"

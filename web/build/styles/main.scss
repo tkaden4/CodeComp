@@ -1,0 +1,73 @@
+$bg-color: #1a1a1c;
+$fg-color: ghostwhite;
+
+$header-size: 60px;
+
+body, html {
+    background-color: $bg-color;
+    color: $fg-color;
+    font-family: 'Raleway', sans-serif;
+}
+
+.buttons {
+    text-align: center;
+    float: right;
+    & > button {
+        transform: translate(0, 25%);
+        margin-left: 10px;
+    }
+}
+
+.header {
+    background-color: $fg-color;
+    color: $bg-color;
+}
+
+.title {
+    height: $header-size;
+    line-height: $header-size;
+    font-size: 4vw;
+    margin-left: 15px;
+}
+
+.orange {
+    color: orange;
+    border: 1px solid darkorange;
+}
+
+.purple {
+    color: plum;
+    border: 1px solid violet;
+}
+
+.yellow {
+    color: lightgoldenrodyellow;
+    border: 1px solid goldenrod;
+}
+
+.blue {
+    color: lightblue;
+    border: 1px solid blue;
+}
+
+.stat {
+    text-align: center;
+    padding: 15px;
+}
+
+.problem {
+
+}
+
+#logo {
+    max-height: $header-size;
+    float: left;
+    margin-left: 10px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

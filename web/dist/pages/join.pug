@@ -1,0 +1,13 @@
+html
+    head
+        title CC - Join
+        include _mixins/header
+    body
+        include _mixins/nav
+        .centered
+            div(style="text-align: center; font-size: 2em").
+                Join Competition
+            form(action="join", method="POST" style="margin: auto; text-align: center")
+                input(type="text", name="id", style="color: black")
+                br
+                input.button.button-primary(type="submit", value="submit")

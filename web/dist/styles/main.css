@@ -1,0 +1,52 @@
+body, html {
+  background-color: #1a1a1c;
+  color: ghostwhite;
+  font-family: 'Raleway', sans-serif; }
+
+.buttons {
+  text-align: center;
+  float: right; }
+  .buttons > button {
+    transform: translate(0, 25%);
+    margin-left: 10px; }
+
+.header {
+  background-color: ghostwhite;
+  color: #1a1a1c; }
+
+.title {
+  height: 60px;
+  line-height: 60px;
+  font-size: 4vw;
+  margin-left: 15px; }
+
+.orange {
+  color: orange;
+  border: 1px solid darkorange; }
+
+.purple {
+  color: plum;
+  border: 1px solid violet; }
+
+.yellow {
+  color: lightgoldenrodyellow;
+  border: 1px solid goldenrod; }
+
+.blue {
+  color: lightblue;
+  border: 1px solid blue; }
+
+.stat {
+  text-align: center;
+  padding: 15px; }
+
+#logo {
+  max-height: 60px;
+  float: left;
+  margin-left: 10px; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }

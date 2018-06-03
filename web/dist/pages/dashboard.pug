@@ -1,0 +1,26 @@
+html
+    head
+        title Dashboard
+        include _mixins/header
+    body
+        .header
+            .container
+                include _mixins/logo
+                span.title=competition.name
+        .container
+            br
+            .row
+                div.four.columns.stat.orange
+                    div Students
+                    div=competition.nusers
+                div.four.columns.stat.yellow
+                    div Students
+                    div=competition.nusers
+                div.four.columns.stat.purple
+                    div Students
+                    div=competition.nusers
+            br
+            .row
+                div.four.columns.stat.blue
+                    div Students
+                    div=competition.nusers
